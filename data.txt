@@ -1,0 +1,2 @@
+Plaintext: HELLO
+Encrypted: 3A4B5C6D
