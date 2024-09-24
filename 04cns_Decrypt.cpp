@@ -53,7 +53,7 @@ string decryptRailFence(string cipher, int key) {
 }
 
 int main() {
-    string encryptedText = "cauhtnater";
+    string encryptedText = "RnaoaNkdhae";
     int key = 3;
 
     string decryptedText = decryptRailFence(encryptedText, key);

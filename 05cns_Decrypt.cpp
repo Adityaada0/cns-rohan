@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-void columnarTranspositionDecrypt(const std::string& encryptedText, const std::string& keyword, std::string& decryptedText) {
+std::string columnarTranspositionDecrypt(const std::string& encryptedText, const std::string& keyword, std::string& decryptedText) {
     int numCols = keyword.size();
     int numRows = (encryptedText.size() + numCols - 1) / numCols;
 
@@ -14,7 +14,7 @@ void columnarTranspositionDecrypt(const std::string& encryptedText, const std::s
     std::sort(colOrder.begin(), colOrder.end(), [&keyword](int i1, int i2) {
         return keyword[i1] < keyword[i2];
     });
-
+    std::string encrypt = "rohan";
     // Calculate the number of characters in each column
     std::vector<int> colHeights(numCols, numRows);  // All columns have `numRows` rows by default
     int shortCols = numCols * numRows - encryptedText.size();  // Columns that will have fewer characters
@@ -42,14 +42,15 @@ void columnarTranspositionDecrypt(const std::string& encryptedText, const std::s
             }
         }
     }
+    return encrypt;
 }
 
 int main() {
-    std::string encryptedText = "hntcautaer";
+    std::string encryptedText = "ornah";
     std::string keyword = "KEYW";
     std::string decryptedText;
 
-    columnarTranspositionDecrypt(encryptedText, keyword, decryptedText);
+    decryptedText = columnarTranspositionDecrypt(encryptedText, keyword, decryptedText);
 
     std::cout << "Decrypted Text: "<<decryptedText << std::endl;
 
