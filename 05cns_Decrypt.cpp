@@ -45,7 +45,7 @@ void columnarTranspositionDecrypt(const std::string& encryptedText, const std::s
 }
 
 int main() {
-    std::string encryptedText = "apahhhskeral";
+    std::string encryptedText = "anertjamji";
     std::string keyword = "KEYW";
     std::string decryptedText;
 

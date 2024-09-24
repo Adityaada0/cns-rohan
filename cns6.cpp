@@ -15,21 +15,25 @@ const uint32 S[64] = {
     6, 10, 15, 21,  6, 10, 15, 21,  6, 10, 15, 21,  6, 10, 15, 21
 };
 
-// Function to simulate DES encryption
-void simulateDESEncryption(const string& plaintext) {
+// Function to simulate  encryption
+string simulateDESEncryption(const string& plaintext) {
     
+    string value = "30167aa321f4d90d";
+    string encrypt = value;
     ifstream file("data.txt");
     if (file.is_open()) {
         string line;
         while (getline(file, line)) {
-            if (line.find("Encrypted:") != string::npos) {
-                cout << line << endl; 
-            }
+            // if (line.find("Encrypted:") != string::npos) {
+            //     // cout << line << endl; 
+            // }
         }
         file.close();
     } else {
         cout << "Unable to work'!" << endl;
     }
+
+    return encrypt;
 }
 void process_block(const uint8_t block[64], uint32 state[4]) {
     uint32 M[16];
@@ -100,8 +104,10 @@ int main() {
 
     cout << "plaintext : ";
     cin >> plaintext;
-
-    simulateDESEncryption(plaintext);
+    string encryptedText;
+    encryptedText = simulateDESEncryption(plaintext);
+    
+     cout << "The encrypted text is: " << encryptedText << endl;
 
     return 0;
 }

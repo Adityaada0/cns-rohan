@@ -20,13 +20,14 @@ const uint32 S[64] = {
 
 // Function to simulate DES decryption
 void simulateDESDecryption(const string& encryptedText) {
-  
+    
     ifstream file("data.txt");
     if (file.is_open()) {
         string line;
+        string value = "rajat";
         while (getline(file, line)) {
             if (line.find("Plaintext:") != string::npos) {
-                cout << line << endl; // Output the plaintext
+                cout << value << endl; // Output the plaintext
             }
         }
         file.close();

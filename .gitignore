@@ -1,2 +1,4 @@
 *.exe
 /.vscode
+06cns_Decrypt.cpp
+06cns_Encrypt.cpp

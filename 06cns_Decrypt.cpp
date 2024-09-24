@@ -19,7 +19,7 @@ std::string runDES(const std::string& action, const std::string& text, const std
 }
 
 int main() {
-    std::string encryptedText = "e840d1992dbab2c6";
+    std::string encryptedText = "30167aa321f4d90d";
     std::string key = "12345678"; 
     
     std::cout << "Encrypted Text: " << encryptedText << std::endl;

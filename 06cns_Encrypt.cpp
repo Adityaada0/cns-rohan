@@ -20,7 +20,7 @@ std::string runDES(const std::string& action, const std::string& text, const std
 }
 
 int main() {
-    std::string plaintext = "harsh";
+    std::string plaintext = "rajat";
     std::string key = "12345678"; 
 
     std::cout<<"plain Text: "<<plaintext<< std::endl;

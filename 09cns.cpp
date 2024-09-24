@@ -113,7 +113,7 @@ std::string md5(const std::string& input) {
 }
 
 int main() {
-    std::string input = "harsh pakhale";
+    std::string input = "rajatnimje";
     std::string output = md5(input);
 
     std::cout << "Original Text: " << input << std::endl;
