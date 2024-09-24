@@ -1,2 +1,2 @@
-Plaintext: HELLO
-Encrypted: 3A4B5C6D
+Plaintext: amol
+Encrypted: ef1e257563cfca3d
