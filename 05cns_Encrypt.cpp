@@ -29,7 +29,7 @@ void columnarTranspositionEncrypt(const std::string& text, const std::string& ke
     }
 }
 int main() {
-    std::string text = "rajatnimje";
+    std::string text = "adityagondane";
     std::string keyword = "KEYW";
     std::string encryptedText;
 

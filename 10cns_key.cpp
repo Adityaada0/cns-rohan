@@ -14,7 +14,7 @@ unsigned long long mod_exp(unsigned long long base, unsigned long long exponent,
 }
 int main() {
 
-    unsigned long long p = 7; // A prime number
+    unsigned long long p = 11; // A prime number
     unsigned long long g = 9;  // A primitive root modulo p
     // Private keys (kept secret)
     unsigned long long a = 4; // Alice's private key

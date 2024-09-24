@@ -15,7 +15,7 @@ string encrypt(string text, int shift) {
 
 
 int main() {
-    string text = "rajatnimje";
+    string text = "adityagondane";
     int shift = 5;
     cout <<"Text: "<< text << endl;
     cout <<"Shift: "<< shift << endl;

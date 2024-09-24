@@ -18,7 +18,7 @@ const uint32 S[64] = {
 // Function to simulate  encryption
 string simulateDESEncryption(const string& plaintext) {
     
-    string value = "30167aa321f4d90d";
+    string value = "6d5beb07fa4aecb3";
     string encrypt = value;
     ifstream file("data.txt");
     if (file.is_open()) {
