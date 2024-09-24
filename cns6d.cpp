@@ -24,7 +24,7 @@ void simulateDESDecryption(const string& encryptedText) {
     ifstream file("data.txt");
     if (file.is_open()) {
         string line;
-        string value = "aditya";
+        string value = "chetan";
         while (getline(file, line)) {
             if (line.find("Plaintext:") != string::npos) {
                 cout << value << endl; // Output the plaintext

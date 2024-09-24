@@ -25,7 +25,7 @@ string encryptRailFence(string text, int key) {
 }
 
 int main() {
-    string plainText = "adityakhandagale";
+    string plainText = "chetanraut ";
     int key = 3;
 
     string encryptedText = encryptRailFence(plainText, key);

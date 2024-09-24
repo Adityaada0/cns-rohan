@@ -15,7 +15,7 @@ string decrypt(string text, int shift) {
 }
 
 int main() {
-    string cipherText = "finydfpmfsiflfqj";
+    string cipherText = "hmjyfswfzy";
     int shift = 5;
 
     cout << "Cipher Text: " << cipherText << endl;

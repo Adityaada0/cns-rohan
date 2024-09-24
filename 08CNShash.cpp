@@ -79,7 +79,7 @@ std::string sha1(const std::string& input) {
     return result.str();
 }
 int main() {
-    std::string input = "adityakhandagale";
+    std::string input = "chetan raut";
     std::string output = sha1(input);
     std::cout << "Original Text: " << input << std::endl;
     std::cout << "SHA-1 Hash: " << output << std::endl;
